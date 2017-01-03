@@ -1,0 +1,9 @@
+<div class="card-columns">
+    <div class="" *ngFor="let note of notesList | async">
+        <notes-item
+            [note]="note"
+            (onDelete)="deleteNote($event)"
+            (onEdit)="editNote($event)"
+        ></notes-item>
+    </div>
+</div>

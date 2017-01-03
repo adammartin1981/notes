@@ -1,0 +1,7 @@
+.alert-container {
+    width:100%;
+    z-index:1050;
+    position:fixed;
+    top:5px;
+    padding:5px 25px;
+}

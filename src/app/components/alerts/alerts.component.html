@@ -1,0 +1,5 @@
+<div class="alert-container">
+    <div *ngFor="let alert of alerts | async">
+        <ngb-alert [type]='alert.type || "danger"' (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+    </div>
+</div>

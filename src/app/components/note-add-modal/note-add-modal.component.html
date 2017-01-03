@@ -1,0 +1,25 @@
+<div class="modal-header">
+    <button type="button"
+            class="close"
+            (click)="activeModal.dismiss()">
+        <span>&times;</span>
+    </button>
+    <h4 class="modal-title">Create Note</h4>
+</div>
+<div class="modal-body">
+    <textarea (keyup)="noteChange($event)">{{ newNoteText }}</textarea>
+</div>
+<div class="modal-footer">
+
+    <button type="button"
+            class="btn btn-secondary"
+            (click)="activeModal.dismiss()"
+    >Close</button>
+
+    <button type="button"
+            class="btn btn-primary"
+            (click)="save()"
+            [disabled]="!canSave()"
+    >Save</button>
+
+</div>

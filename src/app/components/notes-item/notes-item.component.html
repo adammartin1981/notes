@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-block">
+        <pre>{{ note.note }}</pre>
+        <div class="pull-right">
+            <button class="btn btn-danger btn-sm" (click)="deleteNote()">
+                <i class="fa fa-remove" aria-hidden="true"></i>
+                Delete
+            </button>
+
+
+            <button class="btn btn-success btn-sm" (click)="editNote()">
+                <i class="fa fa-pencil-square-o" aria-hidden="true" ></i>
+                Edit
+            </button>
+        </div>
+    </div>
+</div>
